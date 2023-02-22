@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>menu responsivo</title>
-    <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
-    <!-- https://fonts.google.com/icons nao satisfeito com as fontes, a google agora fornece icones -->
+<body onresize="mudouTamanho()">
+
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -27,9 +28,9 @@
     <main>
         <article>
             <h2>Testando media queries</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deleniti, amet excepturi accusantium cumque nam sunt ad! Fuga assumenda, est, pariatur totam aperiam nesciunt, perferendis dolorum officiis non fugit quia? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dignissimos cum praesentium debitis. Numquam placeat similique quibusdam tempore exercitationem quas non, sequi obcaecati officiis, facere consectetur amet libero, architecto iste!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos suscipit mollitia necessitatibus ratione! Velit veniam, quasi dolore dolorum itaque officiis mollitia a voluptate fugit nesciunt aliquam ullam possimus harum eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam sequi, dolorem repudiandae tempora esse vitae nesciunt voluptas cumque qui cum, molestias debitis rem dignissimos aut adipisci at maiores asperiores inventore?</p>
-            <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla laborum quidem eum deserunt sit accusantium unde. Libero, voluptas dolore sint itaque ut repellat dignissimos hic animi porro placeat impedit asperiores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deleniti, amet excepturi accusantium cumque nam sunt ad! Fuga assumenda, est, pariatur totam aperiam nesciunt, perferendis dolorum officiis non fugit quia? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dignissimos cum praesentium debitis. Numquam placeat similique quibusdam tempore exercitationem quas non, sequi obcaecati officiis, facere consectetur amet libero, architecto iste! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore vitae animi dolorum maiores fugit. Earum, aperiam exercitationem mollitia magnam corrupti omnis et delectus itaque repellendus deleniti rem quibusdam quaerat odit.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos suscipit mollitia necessitatibus ratione! Velit veniam, quasi dolore dolorum itaque officiis mollitia a voluptate fugit nesciunt aliquam ullam possimus harum eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam sequi, dolorem repudiandae tempora esse vitae nesciunt voluptas cumque qui cum, molestias debitis rem dignissimos aut adipisci at maiores asperiores inventore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, porro doloremque quas sed in eaque! Numquam, praesentium modi accusantium atque laudantium eligendi in eaque debitis, temporibus voluptatum unde facilis earum.</p>
+            <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla laborum quidem eum deserunt sit accusantium unde. Libero, voluptas dolore sint itaque ut repellat dignissimos hic animi porro placeat impedit asperiores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, natus! Repellat voluptate quisquam excepturi perspiciatis suscipit molestiae numquam, reiciendis iste nesciunt commodi esse in quae veniam. Tenetur porro eligendi recusandae?</p>
         </article>
     </main>
 
@@ -41,8 +42,13 @@
                 itens.style.display='block'
             }
         }
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display='block'
+            } else {
+                itens.style.display='none'
+            }
+        }
     </script>
-
-    <!-- "camelcase" termo usado em js para letras maiusculas e minusculas [pesquisar] -->
 </body>
 </html>
