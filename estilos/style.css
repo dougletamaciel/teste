@@ -80,7 +80,7 @@ div.campo > input{
     border: 0;
     border-radius: 8px;
     padding: 0 4px;
-    transform: translateY(-27%);
+    transform: translateY(calc(-10px - 1%));
     /* todos os 'transforms' e 'transitions' devem serem colocados por ultimo nas configuraçoes de cada seletor, para evitar erros de incompatibilidade*/
 }
 div.campo > input:focus{
