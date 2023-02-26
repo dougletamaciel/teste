@@ -79,7 +79,7 @@ div.campo > input{
     height: 100%;
     border: 0;
     border-radius: 8px;
-    padding: 4px 0;
+    padding: 0 4px;
     transform: translateY(-27%);
     /* todos os 'transforms' e 'transitions' devem serem colocados por ultimo nas configuraçoes de cada seletor, para evitar erros de incompatibilidade*/
 }
